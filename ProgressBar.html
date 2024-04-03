@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Demo</title>
+    <script>
+        handleProgress = () => {
+            var bar = document.getElementById("progress");
+            var progress = 0;
+            var interval = setInterval(() => {
+                progress += 1;
+                bar.value = progress;
+                if(progress == 100)
+                {
+                    progress = 0;
+                    bar.value = 0;
+                    clearInterval(interval);
+                }
+            },10);
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <br><br><br>
+        <progress id="progress" value="0" max="100"></progress>
+        <br>
+        <button onclick="handleProgress()">Start</button>
+    </main>
+</body>
+</html>
