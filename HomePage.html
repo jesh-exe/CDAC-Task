@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>ICE</title>
+
+    <style>
+        /* Navbar Section */
+        .header-container {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+            background: linear-gradient(to top, #ffffff7c, #ffffffd2, #ffffff) !important;
+            backdrop-filter: blur(10px);
+
+        }
+
+        .navbar {
+            border-bottom: 1px solid rgb(219, 219, 219);
+        }
+
+        .navbar-item {
+            border-bottom-right-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.7s ease-in-out;
+        }
+
+        .navbar-item:hover {
+            border-bottom: 3px solid rgb(0, 132, 255);
+        }
+
+        /* Features Section */
+        .bg-cherry {
+            background: linear-gradient(to right, #493240, #f09) !important;
+            color: #fff;
+        }
+
+        .bg-blue {
+            background: linear-gradient(to right, #373b44, #4286f4) !important;
+            color: #fff;
+        }
+
+        .bg-green {
+            background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+            color: #fff;
+        }
+
+        .bg-orange {
+            background: linear-gradient(to right, #a86008, #ffba56) !important;
+            color: #fff;
+        }
+
+        .card-holder {
+            border-radius: 20px;
+            box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+        }
+
+        /* Service Section */
+        .service-container {
+            background-color: rgba(12, 2, 58, 0.925);
+        }
+
+        .service-data-container {
+            background-color: rgba(255, 255, 255, 0.089);
+            border-radius: 30px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .service-data-container:hover {
+            scale: 1.05;
+        }
+
+        .muted-data {
+            color: rgba(255, 255, 255, 0.582);
+        }
+
+        .image-shadow {
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="shadow header-container">
+        <header class="d-flex justify-content-center py-3">
+            <img src="" alt="">
+            <img src="IceFlakeLogoCrop.png" alt="" class="img-fluid" width="250px" height="250px">
+        </header>
+
+        <nav class="navbar p-0">
+            <ul class="d-flex m-0" style="list-style: none;">
+                <li class="pb-2 navbar-item px-4">
+                    <i class="bi bi-house"></i>
+                    <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Home</a>
+                </li>
+                <li class="pb-2 navbar-item px-4">
+                    <i class="bi bi-person"></i>
+                    <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Login</a>
+                </li>
+                <li class="pb-2 navbar-item px-4">
+                    <i class="bi bi-question-circle"></i>
+                    <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
+                    <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg">
+                    <img src="pex.jpg" class="w-100">
+                </picture>
+                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg" class="w-100 img-fluid"
+                    alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
+                    <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_2_scaled.jpg">
+                    <img src="pen.jpg" class="w-100">
+                </picture>
+                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_2_scaled.jpg" class="w-100 img-fluid"
+                    alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
+                    <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_3_scaled.jpg">
+                    <img src="gun.jpg" class="w-100">
+                </picture>
+                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_3_scaled.jpg" class="w-100 img-fluid"
+                    alt="..."> -->
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Features Section -->
+    <div class="my-5">
+        <!-- <div class="display-6 fs-1 text-center mt-5 mb-3">
+            Features
+        </div> -->
+        <div class="container-fluid">
+            <div class="row p-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
+                    <div class="card-holder bg-cherry text-center p-5">
+                        <div class="pb-4">
+                            <img src="gear.png" alt="" class="img-fluid" width="70px" height="70px">
+                        </div>
+                        <div class="lead text-white">
+                            Access to Hardware resources through Software interface
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
+                    <div class="card-holder bg-blue text-center p-5">
+                        <div class="pb-4">
+                            <img src="db.png" alt="" class="img-fluid" width="45px" height="45px">
+                        </div>
+                        <div class="lead text-white">
+                            Access to Hardware resources through Software interface
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
+                    <div class="card-holder bg-green text-center p-5">
+                        <div class="pb-4">
+                            <img src="gear.png" alt="" class="img-fluid" width="70px" height="70px">
+                        </div>
+                        <div class="lead text-white">
+                            Access to Hardware resources through Software interface
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
+                    <div class="card-holder bg-orange text-center p-5">
+                        <div class="pb-4">
+                            <img src="gear.png" alt="" class="img-fluid" width="70px" height="70px">
+                        </div>
+                        <div class="lead text-white">
+                            Access to Hardware resources through Software interface
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Section -->
+    <section class="text-white service-container mt-5 mb-5 py-3 shadow">
+        <div class="text-center display-6 fs-1 my-5">
+            Services
+        </div>
+        <div class="container-fluid mb-2 cursor-pointer">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-4 text-center">
+                    <div class="p-4 service-data-container shadow-lg">
+                        <div class="my-4">
+                            <img src="computesss.png" alt="" width="100px" height="100px" class="img-fluid">
+                        </div>
+                        <div class="text-center display-6 fs-5 mb-1 fw-bold">
+                            Compute
+                        </div>
+                        <hr>
+                        <div class="muted-data">
+                            Docker is a container-based application packager that allows for multiple containers on a
+                            single host. Users can download Docker images from the Hub and use the Ice compute service
+                            for on-demand access.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-4 text-center">
+                    <div class="p-4 service-data-container shadow-lg">
+                        <div class="my-4">
+                            <img src="favpng_data-storage-disk-storage-hard-drives-network-storage-systems.png" alt=""
+                                width="100px" height="100px" class="img-fluid">
+                        </div>
+                        <div class="text-center display-6 fs-5 mb-1 fw-bold">
+                            Storage
+                        </div>
+                        <hr>
+                        <div class="muted-data">
+                            Publishing a sequence typically involves the systematic release or dissemination of content,
+                            often in a specific order or arrangement. This could apply to various contexts, such as a
+                            series of articles, chapters, videos, or any other creative works.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-4 text-center">
+                    <div class="p-4 service-data-container shadow-lg">
+                        <div class="my-4">
+                            <img src="clipart1855837.png" alt="" width="100px" height="100px"
+                                class="image-shadow img-fluid">
+                        </div>
+                        <div class="text-center display-6 fs-5 mb-1 fw-bold">
+                            VCF
+                        </div>
+                        <hr>
+                        <div class="muted-data">
+                            The tool allows users to identify potential variants (SNPs) that can differentiate between
+                            populations and diseases, aiding in array design.
+                            It allows users to partition samples based on traits, narrowing down potential SNPs for
+                            further research.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-4 text-center">
+                    <div class="p-4 service-data-container shadow-lg">
+                        <div class="my-4">
+                            <img src="Share-PNG-HD-Image.png" alt="" width="100px" height="100px" class="img-fluid">
+                        </div>
+                        <div class="text-center display-6 fs-5 mb-1 fw-bold">
+                            Sharing & Collaboration
+                        </div>
+                        <hr>
+                        <div class="muted-data">
+                            The ICE solution offers advanced features like web links, reliable transfer, endpoint
+                            encryption, and version control, making it user-friendly, interactive and pleasant to use
+                            over the
+                            internet, ensuring long file transfers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
