@@ -21,13 +21,9 @@
             top: 0;
             background-color: white;
             z-index: 1000;
-            background: linear-gradient(to top, #ffffff7c, #ffffffd2, #ffffff) !important;
+            background: linear-gradient(to top, #ffffff7c, #ffffffd7, #ffffff) !important;
             backdrop-filter: blur(10px);
 
-        }
-
-        .navbar {
-            border-bottom: 1px solid rgb(219, 219, 219);
         }
 
         .navbar-item {
@@ -39,6 +35,11 @@
 
         .navbar-item:hover {
             border-bottom: 3px solid rgb(0, 132, 255);
+        }
+
+        /* Carousel Section */
+        .carousel-container{
+            margin-top: 5vh;
         }
 
         /* Features Section */
@@ -65,6 +66,11 @@
         .card-holder {
             border-radius: 20px;
             box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-holder:hover{
+            scale: 1.05;
         }
 
         /* Service Section */
@@ -105,15 +111,15 @@
 
         <nav class="navbar p-0">
             <ul class="d-flex m-0" style="list-style: none;">
-                <li class="pb-2 navbar-item px-4">
+                <li class="pb-2 navbar-item px-4 pb-3">
                     <i class="bi bi-house"></i>
                     <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Home</a>
                 </li>
-                <li class="pb-2 navbar-item px-4">
+                <li class="pb-2 navbar-item px-4 pb-3">
                     <i class="bi bi-person"></i>
                     <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Login</a>
                 </li>
-                <li class="pb-2 navbar-item px-4">
+                <li class="pb-2 navbar-item px-4 pb-3">
                     <i class="bi bi-question-circle"></i>
                     <a class="lead mx-2 fs-5 text-dark text-decoration-none" href="">Help</a>
                 </li>
@@ -122,34 +128,25 @@
     </div>
 
     <!-- Carousel Section -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel carousel-container slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <picture>
-                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
                     <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg">
                     <img src="pex.jpg" class="w-100">
                 </picture>
-                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg" class="w-100 img-fluid"
-                    alt="..."> -->
             </div>
             <div class="carousel-item">
                 <picture>
-                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
                     <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_2_scaled.jpg">
                     <img src="pen.jpg" class="w-100">
                 </picture>
-                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_2_scaled.jpg" class="w-100 img-fluid"
-                    alt="..."> -->
             </div>
             <div class="carousel-item">
                 <picture>
-                    <!-- <source media="(min-width:650px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_1_scaled.jpg"> -->
                     <source media="(min-width:865px)" srcset="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_3_scaled.jpg">
                     <img src="gun.jpg" class="w-100">
                 </picture>
-                <!-- <img src="https://ice-ibdc.rcb.res.in/assets/images/carousel/ICE_3_scaled.jpg" class="w-100 img-fluid"
-                    alt="..."> -->
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -163,12 +160,9 @@
     </div>
 
     <!-- Features Section -->
-    <div class="my-5">
-        <!-- <div class="display-6 fs-1 text-center mt-5 mb-3">
-            Features
-        </div> -->
+    <div class="mt-5">
         <div class="container-fluid">
-            <div class="row p-3">
+            <div class="row p-5">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
                     <div class="card-holder bg-cherry text-center p-5">
                         <div class="pb-4">
@@ -190,7 +184,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-3">
-                    <div class="card-holder bg-green text-center p-5">
+                    <div class="card-holder bg-green text-center  p-5">
                         <div class="pb-4">
                             <img src="gear.png" alt="" class="img-fluid" width="70px" height="70px">
                         </div>
@@ -214,7 +208,7 @@
     </div>
 
     <!-- Service Section -->
-    <section class="text-white service-container mt-5 mb-5 py-3 shadow">
+    <section class="text-white service-container my-5 py-3 shadow">
         <div class="text-center display-6 fs-1 my-5">
             Services
         </div>
